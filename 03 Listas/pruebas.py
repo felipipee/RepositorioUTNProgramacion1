@@ -1,8 +1,10 @@
-lista_anidada = [1, 1.3, ["UTN","Mendoza"]]
+#Complete correctamente el código seleccionando la opción correcta.
 
-print(lista_anidada[2][1])
 
-print(8 in [9.1, 8.5, 'hola', True])
+num_pares_1_al_10 = range(2, 11, 2)
 
-notas_dos = ["UTN"]
-print("UTN" in notas_dos)
+num_pares_1_al_10 = list(num_pares_1_al_10)
+
+num_4 = num_pares_1_al_10[1]
+
+print(num_4)

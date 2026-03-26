@@ -1,6 +1,5 @@
-#7) Crear una matriz (lista anidada) de 7x2 con las temperaturas mínimas y máximas de una 
-#semana. 
-#• Calcular el promedio de las mínimas y el de las máximas. 
+#7) Crear una matriz (lista anidada) de 7x2 con las temperaturas mínimas y máximas de una semana.
+#• Calcular el promedio de las mínimas y el de las máximas.
 #• Mostrar en qué día se registró la mayor amplitud térmica.
 
 temperaturas = [
@@ -18,6 +17,10 @@ minimas = [temp[0] for temp in temperaturas]
 maximas = [temp[1] for temp in temperaturas]
 promedio_minimas = sum(minimas) / len(minimas)
 promedio_maximas = sum(maximas) / len(maximas)
+
+# Mostrar los promedios
+print("Promedio de temperaturas mínimas:", promedio_minimas)
+print("Promedio de temperaturas máximas:", promedio_maximas)
 
 # Mostrar en qué día se registró la mayor amplitud térmica
 amplitudes = [maxima - minima for minima, maxima in temperaturas]
